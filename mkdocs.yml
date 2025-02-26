@@ -1,0 +1,36 @@
+site_name: "Guia Acessível"
+
+# Tema Material for MkDocs para um design agradável
+theme:
+  name: "material"
+  features:
+    - navigation.tabs  # Exibe as páginas principais no cabeçalho
+    - navigation.tabs.sticky  # Mantém as abas sempre visíveis no topo
+    - navigation.sections  # Mantém apenas os títulos principais
+    - toc.integrate  # Exibe o índice lateral
+  palette:
+    scheme: "default"
+    primary: "blue"
+    accent: "light-blue"
+  font:
+    text: "Roboto"
+    code: "Fira Code"
+
+# Configuração do índice lateral para mostrar apenas ##
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 2  # Apenas h2 aparecem no índice
+
+# Configuração das páginas no cabeçalho
+nav:
+  - Home: index.md
+  - Cidadania Web: Cidadania-web.md
+  - WCAG e Nielsen: wcag.md
+  - Ferramentas: ferramentas.md
+  - Leitores de tela: leitoresdetela.md
+  - Teclado: teclado.md
+
+# Personalização de CSS para esconder subtítulos menores que h2 no índice
+extra_css:
+  - styles/extra.css

@@ -1,0 +1,6 @@
+.md-nav__link[aria-level="3"],
+.md-nav__link[aria-level="4"],
+.md-nav__link[aria-level="5"],
+.md-nav__link[aria-level="6"] {
+  display: none;
+}
