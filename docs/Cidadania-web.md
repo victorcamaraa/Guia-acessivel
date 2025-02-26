@@ -24,6 +24,7 @@ Organize os elementos de forma hierárquica, utilizando tags apropriadas no html
 -   [Conheça a diretriz WCAG 2.2 - Ordem do foco (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/focus-order)
 -   [Conheça a diretriz WCAG 2.2 - Em foco (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/on-focus)
 
+---
 ## 2. Título
 
 Certifique-se de que cada página tenha um título claro e descritivo que indique sua finalidade.
@@ -42,8 +43,10 @@ Garantir que cada página tenha um título informativo, que comunique claramente
 ### O que fazer
 
 Garanta que cada página tenha um título único que reflete seu conteúdo de forma precisa e objetiva. O título deve ser curto e direto, informando o propósito da página sem ambiguidade. Além disso, é importante evitar termos genéricos ou irrelevantes, garantindo que os usuários, inclusive aqueles que utilizam tecnologias assistivas, possam identificar rapidamente a função da página e navegar com facilidade.
+
 -   [Conheça a diretriz WCAG 2.2 - Página com título (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/page-titled)
 
+---
 ## 3. Não sensorial
 
 Forneça instruções claras, que não dependam apenas de características sensoriais, como formato, cor ou posição dos elementos na interface – por exemplo, ''clique no botão inscreva-se” em vez de ''clique no botão abaixo''.
@@ -68,6 +71,7 @@ Utilize instruções claras e específicas para que qualquer usuário consiga en
 -   [Conheça a diretriz WCAG 2.2 - Características Sensoriais (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics)
 -   [Conheça a diretriz WCAG 2.2 - Uso de Cores (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color)
 
+---
 ## 4. Conteúdo visual
 
 Forneça descrições textuais adequadas (atributos ALT) para todas as imagens, ícones e CAPTCHAs relevantes, explicando suas funções e seu conteúdo de forma clara e precisa. Certifique-se de que essas descrições sejam lidas pelas tecnologias assistivas, evitando informações irrelevantes ou redundantes.
@@ -89,6 +93,8 @@ Disponibilizar as informações não textuais para mais pessoas.
 Criar uma alternativa de texto para o conteúdo visual e auditivo.
 
    - [Conheça a diretriz WCAG 2.2 - Conteúdo não textual (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content)
+   
+---
 ## 5. Consistência na interação
 
 Garanta que a interação do usuário com campos e cabeçalhos não altere o contexto sem confirmação, mantendo consistência e previsibilidade. Use rótulos claros e forneça instruções, se necessário, para facilitar o preenchimento de formulários.
@@ -112,6 +118,7 @@ Não deixe os elementos do site mudarem de lugar ou aparecerem sozinhas quando o
 -   [Conheça a diretriz WCAG 2.2- Rótulos e instruções (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions)
 -   [Conheça a diretriz WCAG 2.2 - Cabeçalhos e Rótulos (Nível AA)](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels)
 
+---
 ## 6. Minimização de redundância
 
 Evite solicitar informações repetidas em formulários de várias etapas, a menos que seja absolutamente necessário (por exemplo, para a confirmação de senha).
@@ -134,6 +141,7 @@ Evite pedir informações que o usuário já forneceu durante o mesmo processo.
 
 -   [Conheça a diretriz WCAG 2.2 - Entrada Reduntante (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry)
 
+---
 ## 7. Clareza na exposição de erros
 
 Certifique-se de que os erros sejam comunicados de forma clara, utilizando múltiplos recursos, como mudança de cor, alteração de formato, alerta sonoro ou mensagem de texto. Além disso, destaque onde o erro ocorreu e forneça um exemplo prático de como ele pode ser corrigido.
@@ -157,6 +165,7 @@ Forneça avisos claros de erro e sugira maneiras de corrigi-los. Para garantir a
 -   [Conheça a diretriz WCAG 2.2 - Identificação de Erro (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/error-identification)
 -   [Conheça a diretriz WCAG 2.2 - Sugestão de erro (Nível AA)](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion)
 
+---
 ## 8. Descrição de links
 
 Cada link deve ter um texto que descreva sua função ou estar em um contexto que explique sua finalidade.
@@ -178,6 +187,7 @@ Use links que digam exatamente o que vai acontecer, como “veja nossos serviço
 
 -   [Conheça a diretriz WCAG 2.2 - Finalidade do Link (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)
 
+---
 ## 9. Controle flexível de gestos e alternativas de interação
 
 Garanta que os usuários possam cancelar ou desativar ações acidentais originadas por gestos e ofereça alternativas de controle que não dependam de movimentos do dispositivo. Todas as funções que requerem gestos táteis devem disponibilizar opções adicionais de interação, como teclas de atalho, botões clicáveis ou comandos acionados por um único toque, prevenindo erros e oferecendo flexibilidade no uso.
@@ -201,7 +211,7 @@ Implemente confirmações ou opções de desfazer para ações críticas que pod
 -   [Conheça a diretriz WCAG 2.2 - Gestos de acionamento (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures)
 -   [Conheça a diretriz WCAG 2.2 - Cancelamento de acionamento (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation)
 -   [Conheça a diretriz WCAG 2.2 - Atuação por movimento (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation)
-
+---
 ## 10. Navegação via teclado
 
 Garanta que todas as funcionalidades também possam ser usadas por meio do teclado, permitindo navegação simples e contínua por todos os elementos interativos.
@@ -225,6 +235,7 @@ Certifique-se de que a ordem do foco do teclado siga uma sequência lógica, que
 -   [Conheça a diretriz WCAG 2.2 - Sem bloqueio de teclado (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap)
 -   [Conheça a diretriz WCAG 2.2 - Atalhos de teclado por caractere (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts)
 
+---
 ## 11. Ignorar repetição
 
 Ofereça uma alternativa para que os usuários de teclado possam pular conteúdos repetidos, como menus de navegação, e acessar o conteúdo principal mais rapidamente.
@@ -244,7 +255,9 @@ Reduzir o tempo e o esforço necessários para acessar o conteúdo relevante, pr
 
 Desenvolvedores devem implementar um skip link que se torna visível ao receber foco, geralmente no topo da página. Esse link deve ser bem descrito, como “Pular para o conteúdo principal”, e testado em navegadores e leitores de tela para garantir que funcione adequadamente. Além disso, deve-se assegurar que ele seja facilmente acessível logo no início da navegação com o teclado, para não exigir a interação com blocos repetidos.
 
--   [Conheça a diretriz WCAG 2.2 – Ignorar Blocos Repetidos (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks)
+-  [Conheça a diretriz WCAG 2.2 – Ignorar Blocos Repetidos (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks)
+
+---
 ## 12. Definição de tempo/movimentos
 
 Permita que os usuários desativem, ajustem ou ampliem qualquer limite de tempo no aplicativo ou site. Também ofereça controle sobre qualquer movimento automático, piscar ou rolar da tela, com a opção de pausar, parar ou ocultar essas ações.
@@ -270,8 +283,9 @@ Certifique-se de que controles funcionem com leitores de tela e comandos de voz,
 
 -   [Conheça a diretriz WCAG 2.2 - Tempo ajustável (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html)
 
--   [Conheça a diretriz WCAG 2.2 - Colocar em pausa, parar, ocultar (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html)
+-  [Conheça a diretriz WCAG 2.2 - Colocar em pausa, parar, ocultar (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html)
 
+---
 ## 13. Nomes e rótulos acessíveis e consistentes
 
 Certifique-se de que todos os componentes da interface do usuário, como formulários, links e elementos gerados por scripts, possuam atributos acessíveis (nome, função e valor) e que o nome dos controles corresponda aos seus rótulos visíveis, facilitando a interpretação por tecnologias assistivas e a interação por voz.
@@ -294,7 +308,7 @@ Configurar corretamente os atributos aria-label, role e aria-valuenow para forne
 
 -   [Conheça a diretriz WCAG 4.1.2 Nome, função, valor (Nível A)](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
 -   [Conheça a diretriz WCAG 2.5.3 Rótulo no Nome acessível (Nível A)](https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html)
-
+---
 ## 14. Transcrições
 
 Forneça transcrições textuais para todo conteúdo de áudio e legendas e/ou audiodescrições para todo conteúdo de vídeo. Descreva o que acontece visualmente no vídeo para que todos os usuários possam entender o conteúdo.
@@ -323,7 +337,7 @@ Forneça uma alternativa quando o conteúdo for perceptível com apenas um senti
 -   [Conheça a diretriz WCAG 2.2 - Legendas (Pré-gravadas) (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html)
 -   [Conheça a diretriz WCAG 2.2 - Audiodescrição ou Mídia Alternativa (Pré-gravada) (Nível A)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html)
 -   [Conheça a diretriz WCAG 2.2 - Audiodescrição (Pré-gravada) (Nível AA)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html)
-
+---
 ## 15. Formatação de ajuda
 
 Garanta que a opção de ajuda tenha o mesmo formato em todas as telas, incluindo alternativas de contato humano e sistemas automatizados.

@@ -25,11 +25,13 @@ markdown_extensions:
 # Configuração das páginas no cabeçalho
 nav:
   - Home: index.md
+  - Analise: analise.md
   - Cidadania Web: Cidadania-web.md
   - WCAG e Nielsen: wcag.md
   - Ferramentas: ferramentas.md
   - Leitores de tela: leitoresdetela.md
   - Teclado: teclado.md
+  - Codigo: codigo.md
 
 # Personalização de CSS para esconder subtítulos menores que h2 no índice
 extra_css:
