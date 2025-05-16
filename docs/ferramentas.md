@@ -24,6 +24,22 @@ Ferramentas de auditoria automática são essenciais para desenvolvedores web qu
 
 Apesar dessas ferramentas serem poderosas, elas **não substituem testes manuais e com usuários reais**. Para um site verdadeiramente acessível, combine auditorias automáticas com testes de usabilidade envolvendo pessoas com deficiência. Exemplo: Após usar uma ferramenta de auditoria, uma empresa pode convidar usuários com deficiência para testar o site e relatar dificuldades que ferramentas automáticas podem não detectar.
 
+## Ferramentas de Verificação de Conformidade de Imagens
+
+* **SEOptimer Image Alt Tag Checker**: Varre páginas para garantir que todas as imagens possuam atributos `alt` definidos corretamente ([SEOptimer][7]).
+* **TinyIMG Alt Text Checker**: Além de checar `alt`, oferece orientações de SEO e boas práticas de descrição de imagens ([TinyIMG][8]).
+* **Geradores de descrição por IA (e.g. Midjourney Image‑to‑Text)**: Usam modelos de visão computacional para criar descrições detalhadas de imagens, ampliando a acessibilidade de conteúdos visuais ([Lifewire][9]).
+
+## Ferramentas de Teste de Leitores de Tela
+
+* **JAWS (Job Access With Speech)**: O leitor de tela mais utilizado no Windows, com comandos dedicados de navegação e suporte empresarial ([CSS-Tricks][10]).
+* **NVDA (NonVisual Desktop Access)**: Leitor de código‑fonte aberto, gratuito, com funcionalidades similares ao JAWS ([AudioEye][11]).
+* **VoiceOver (Apple)**: Integrado ao macOS e iOS, permite testar navegabilidade por voz e gestos, garantindo cobertura em plataformas Apple ([CSS-Tricks][10]).
+
+## Uso de IA em Acessibilidade
+
+* **accessiBe**: Widget que aplica ajustes automatizados de screen reader e navegação por teclado, prometendo conformidade rápida, mas sujeito a falhas que podem degradar a experiência ([accessiBe][12]).
+* **Limitações e Riscos**: Estudos mostram que soluções de IA para acessibilidade ainda geram erros significativos — desde descrições imprecisas até interpretações incorretas de elementos — e já motivaram processos judiciais ([Financial Times][13], [WIRED][14]).
 ## Verificação de Contraste
 
 Ferramentas como o WebAIM Contrast Checker e o plugin WCAG Color Contrast Analyzer ajudam a garantir que o contraste entre o texto e o fundo esteja em conformidade com os padrões WCAG.
@@ -97,3 +113,12 @@ Testar o foco é vital para garantir que, ao navegar via teclado, o foco seja ma
 Esses testes são especialmente importantes em sites dinâmicos, onde a navegação e a interação podem ser mais complexas, garantindo que o usuário nunca se perca durante a interação.
 
 Esses testes manuais ajudam a identificar problemas que não seriam capturados apenas com auditorias automáticas, como erros na experiência do usuário que podem afetar a navegação ou a interação em uma página. Quando combinados com ferramentas automáticas de auditoria, esses testes garantem que o site seja realmente acessível para o maior número de pessoas possível.
+
+[7]: https://www.seoptimer.com/alt-tag-checker/?utm_source=chatgpt.com "Image Alt Tag Checker - SEOptimer"
+[8]: https://tiny-img.com/tools/alt-checker/?utm_source=chatgpt.com "Free Image Alt Text Checker | TinyIMG"
+[9]: https://www.lifewire.com/why-midjourneys-new-image-to-text-generator-is-an-accessibility-home-run-7377344?utm_source=chatgpt.com "Why Midjourney's New Image-to-Text Generator Is an Accessibility Home Run"
+[10]: https://css-tricks.com/comparing-jaws-nvda-and-voiceover/?utm_source=chatgpt.com "A Brief Introduction to JAWS, NVDA, and VoiceOver - CSS-Tricks"
+[11]: https://www.audioeye.com/post/nvda-screen-reader-web-accessibility/?utm_source=chatgpt.com "Using the NVDA Screen Reader to Test Web Accessibility - AudioEye"
+[12]: https://accessibe.com/accesswidget/artificial-intelligence?utm_source=chatgpt.com "AI-Powered Accessibility - accessiBe"
+[13]: https://www.ft.com/content/3c877c55-b698-43da-a222-8ae183f53078?utm_source=chatgpt.com "Blind internet users struggle with error-prone AI aids"
+[14]: https://www.wired.com/story/company-tapped-ai-website-landed-court?utm_source=chatgpt.com "This Company Tapped AI for Its Website-and Landed in Court"
