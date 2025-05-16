@@ -1,45 +1,53 @@
-## Ferramentas de Auditoria de Sites
-
-* **WAVE (WebAIM)**: Permite identificar erros de acessibilidade e evidenciar visualmente padrões WCAG, facilitando tanto a correção automática quanto a avaliação humana do conteúdo ([WAVE][1]).
-* **axe (Deque)**: Biblioteca open‑source (axe‑core) com extensões para Chrome, Firefox e Edge que oferecem cobertura completa de testes de acessibilidade para desenvolvimento e CI/CD ([Deque][2]).
-* **Lighthouse (Google Chrome)**: Executa auditorias automatizadas de performance e acessibilidade, apresentando uma nota de acessibilidade baseada em métricas ponderadas segundo impacto de usuário ([Chrome for Developers][3]).
-* **Tenon**: Ferramenta que testa acessibilidade diretamente no fluxo de desenvolvimento, com auditorias programáticas e guiadas ([Acessibilidade da TI][4]).
-* **Siteimprove**: Solução corporativa que escaneia sites inteiros, prioriza problemas por severidade e gera relatórios de conformidade contínua ([Siteimprove][5]).
-* **Accessibility Insights (Microsoft/Deque)**: Extensão para Chrome e Edge que detecta e orienta na correção de falhas comuns, suportando integração em pipelines de build ([Accessibility Insights][6]).
-
-## Ferramentas de Verificação de Conformidade de Imagens
-
-* **SEOptimer Image Alt Tag Checker**: Varre páginas para garantir que todas as imagens possuam atributos `alt` definidos corretamente ([SEOptimer][7]).
-* **TinyIMG Alt Text Checker**: Além de checar `alt`, oferece orientações de SEO e boas práticas de descrição de imagens ([TinyIMG][8]).
-* **Geradores de descrição por IA (e.g. Midjourney Image‑to‑Text)**: Usam modelos de visão computacional para criar descrições detalhadas de imagens, ampliando a acessibilidade de conteúdos visuais ([Lifewire][9]).
-
-## Uso de IA em Acessibilidade
-
-* **accessiBe**: Widget que aplica ajustes automatizados de screen reader e navegação por teclado, prometendo conformidade rápida, mas sujeito a falhas que podem degradar a experiência ([accessiBe][12]).
-* **Limitações e Riscos**: Estudos mostram que soluções de IA para acessibilidade ainda geram erros significativos — desde descrições imprecisas até interpretações incorretas de elementos — e já motivaram processos judiciais ([Financial Times][13], [WIRED][14]).
-
----
-
 # TESTES
+Levando em cosnideração as ferramentas apresentadas, segue os testes de cada uma
+Site de exemplo: [G1](https://g1.globo.com/)
 
 ## Auditoria de sites
+### Lighthouse (chrome)
+![image](https://github.com/user-attachments/assets/3d68570a-dead-4ffc-aa87-e475c9a872f2)
+
+extenção do chrome, serve principalmente para diagnosticar problemas de desempenho dos sites que analise, sua função de acessibilidade retorna uma nota e em seguida detalhas as falhas encontradas
+![image](https://github.com/user-attachments/assets/b422c3ad-5b57-4e1e-88a2-54621f631e16)
+
+é possivel tambem analisar a versão mobile do site, obetendo um feedback separado so para o mobile
+![image](https://github.com/user-attachments/assets/0eab654b-75cf-41b7-a091-ad2e3738177f)
+
+### Axe devtools
+É um serviço pago e não automatizado de auditoria de sites, uma dessas auditorias é de acessibilidade
+![image](https://github.com/user-attachments/assets/6af690e8-7b89-4d0c-ba9a-0d3677ae39bb)
+o site é analisado manualmente pela equipe e retorna um relatorio dentro de dias
+
 ### WAVE
 
 ![Captura de tela 2025-05-16 115120](https://github.com/user-attachments/assets/ae9543ad-09ff-47d7-a4fc-49b5c5464345)
 
+Ferramenta automatica focada em acessibilidade de site, o diferencial é mostrar visualmente na pagina analisada os erros encontrados
+
+![image](https://github.com/user-attachments/assets/de8424f8-ea8a-407c-9b72-fb73de93c3ca)
+os erros são detalhaveis e se mostrou uma ferramenta completa dentro do que pode ser testado automaticamente
+
+### Pa11y
+Ferramenta de acessibilidade baseada na WCAG 2.2 que deve ser executada pelo terminal do computador
+![image](https://github.com/user-attachments/assets/38106860-d8d2-47bc-8fb6-1f37dff9bbe6)
+o uso dela não é tão simples e o retorno, o objetivo da ferramenta é q ela seja integrada junto ao desenvolvimento do site, diferente das outras que analisam o site
+
+### Siteimprove
+Retorna uma nota geral e separa por niveis (A, AA e AAA)
+![image](https://github.com/user-attachments/assets/13206aea-b240-47a8-b264-32765fed290b)
+
+Também é possivel pedir uma auditoria do site
+![image](https://github.com/user-attachments/assets/fda92e70-a14b-4842-af31-8f986be5a647)
+
+### Powermapper
+Checa a acessibilidade em comformação com a WCAG 2.2 e a Section 508
+![image](https://github.com/user-attachments/assets/74147c02-9ec7-45cf-b285-45bece76aa86)
+Analisa todo o site ao invés de somente uma pagina
+
+O site reporta exatamente o que chegou e suas fontes de checagem
+![image](https://github.com/user-attachments/assets/9b2b988f-87a0-49f8-a38d-be4b144de9ef)
+
+e também separa a analise nos niveis 
+![image](https://github.com/user-attachments/assets/047618d1-18a7-42d3-9dec-54a0ae6bae93)
 
 
-[1]: https://wave.webaim.org/?utm_source=chatgpt.com "WAVE Web Accessibility Evaluation Tools - WebAIM"
-[2]: https://www.deque.com/axe/?utm_source=chatgpt.com "Accessibility Testing Tools & Software: Axe - Deque Systems"
-[3]: https://developer.chrome.com/docs/lighthouse/accessibility/scoring?utm_source=chatgpt.com "Lighthouse accessibility score - Chrome for Developers"
-[4]: https://itaccessibility.tamu.edu/help/tenon_developer_tool.html?utm_source=chatgpt.com "Tenon Developer Tool - IT Accessibility"
-[5]: https://www.siteimprove.com/toolkit/accessibility-checker/?utm_source=chatgpt.com "Website Accessibility Checker - Free Instant Accessibility Check"
-[6]: https://accessibilityinsights.io/?utm_source=chatgpt.com "Accessibility Insights"
-[7]: https://www.seoptimer.com/alt-tag-checker/?utm_source=chatgpt.com "Image Alt Tag Checker - SEOptimer"
-[8]: https://tiny-img.com/tools/alt-checker/?utm_source=chatgpt.com "Free Image Alt Text Checker | TinyIMG"
-[9]: https://www.lifewire.com/why-midjourneys-new-image-to-text-generator-is-an-accessibility-home-run-7377344?utm_source=chatgpt.com "Why Midjourney's New Image-to-Text Generator Is an Accessibility Home Run"
-[10]: https://css-tricks.com/comparing-jaws-nvda-and-voiceover/?utm_source=chatgpt.com "A Brief Introduction to JAWS, NVDA, and VoiceOver - CSS-Tricks"
-[11]: https://www.audioeye.com/post/nvda-screen-reader-web-accessibility/?utm_source=chatgpt.com "Using the NVDA Screen Reader to Test Web Accessibility - AudioEye"
-[12]: https://accessibe.com/accesswidget/artificial-intelligence?utm_source=chatgpt.com "AI-Powered Accessibility - accessiBe"
-[13]: https://www.ft.com/content/3c877c55-b698-43da-a222-8ae183f53078?utm_source=chatgpt.com "Blind internet users struggle with error-prone AI aids"
-[14]: https://www.wired.com/story/company-tapped-ai-website-landed-court?utm_source=chatgpt.com "This Company Tapped AI for Its Website-and Landed in Court"
+
