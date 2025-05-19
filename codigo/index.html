@@ -1,0 +1,843 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../teclado/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Codigo - Guia Acessível</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../styles/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#implementando-acessibilidade-ao-codar-um-site" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Guia Acessível" class="md-header__button md-logo" aria-label="Guia Acessível" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guia Acessível
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Codigo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../analise/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Analise
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Cidadania-web/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cidadania Web
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../wcag/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  WCAG e Nielsen
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ferramentas/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Ferramentas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Testes/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  testes das ferramentas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../leitoresdetela/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Leitores de tela
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../teclado/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Teclado
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Codigo
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Guia Acessível" class="md-nav__button md-logo" aria-label="Guia Acessível" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guia Acessível
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cidadania-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cidadania Web
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wcag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WCAG e Nielsen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    testes das ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leitoresdetela/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Leitores de tela
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teclado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teclado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Codigo
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Codigo
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-html-semantico" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. HTML Semântico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-atributos-aria" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Atributos ARIA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-contraste-de-cores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Contraste de Cores
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-imagens-e-multimidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Imagens e Multimídia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-boas-praticas-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Boas Práticas Gerais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="implementando-acessibilidade-ao-codar-um-site">Implementando Acessibilidade ao Codar um Site<a class="headerlink" href="#implementando-acessibilidade-ao-codar-um-site" title="Permanent link">&para;</a></h1>
+<p>A acessibilidade na web é uma prática essencial para garantir que todos os usuários, incluindo aqueles com deficiências, possam acessar e interagir com o conteúdo de um site. A seguir, vamos explorar como implementar a acessibilidade ao codar um site, abordando HTML, CSS, JavaScript e outras práticas comuns.</p>
+<h2 id="1-html-semantico">1. HTML Semântico<a class="headerlink" href="#1-html-semantico" title="Permanent link">&para;</a></h2>
+<p>O uso correto de elementos HTML semânticos é fundamental para a acessibilidade. Estruturar o conteúdo de forma lógica e significativa ajuda os leitores de tela e outras tecnologias assistivas a entenderem e navegarem pelo site.</p>
+<h3 id="exemplos-de-elementos-semanticos">Exemplos de Elementos Semânticos<a class="headerlink" href="#exemplos-de-elementos-semanticos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Cabeçalhos (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>):</strong> Use cabeçalhos para estruturar o conteúdo. O <code>&lt;h1&gt;</code> deve ser usado para o título principal, seguido por <code>&lt;h2&gt;</code> para seções principais, <code>&lt;h3&gt;</code> para subseções, e assim por diante.</li>
+</ul>
+<p>```html
+<br />
+<h1>Título Principal</h1></p>
+<h2>Seção Principal</h2>
+<h3>Subseção</h3>
+<p>```</p>
+<ul>
+<li><strong>Listas (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;dl&gt;</code>):</strong> Use listas para agrupar itens relacionados. Listas não ordenadas (<code>&lt;ul&gt;</code>) são usadas para itens sem uma ordem específica, enquanto listas ordenadas (<code>&lt;ol&gt;</code>) são para itens sequenciais.</li>
+</ul>
+<p>```html
+<br />
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul></p>
+<p>```</p>
+<ul>
+<li><strong>Links (<code>&lt;a&gt;</code>):</strong> Sempre use texto descritivo para links. Evite textos como "clique aqui".</li>
+</ul>
+<p><code>html
+  &lt;a href="sobre.html"&gt;Saiba mais sobre nós&lt;/a&gt;</code></p>
+<ul>
+<li><strong>Formulários (<code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>):</strong> Associe rótulos (<code>&lt;label&gt;</code>) a cada campo de formulário usando o atributo <code>for</code>.</li>
+</ul>
+<p><code>html
+  &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+  &lt;input type="text" id="nome" name="nome"&gt;</code></p>
+<h2 id="2-atributos-aria">2. Atributos ARIA<a class="headerlink" href="#2-atributos-aria" title="Permanent link">&para;</a></h2>
+<p>Os atributos ARIA (Accessible Rich Internet Applications) são usados para melhorar a acessibilidade de elementos dinâmicos e interativos.</p>
+<h3 id="exemplos-de-atributos-aria">Exemplos de Atributos ARIA<a class="headerlink" href="#exemplos-de-atributos-aria" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>aria-label</code>:</strong> Fornece um rótulo acessível para elementos que não têm texto visível.</li>
+</ul>
+<p><code>html
+  &lt;button aria-label="Fechar"&gt;X&lt;/button&gt;</code></p>
+<ul>
+<li><strong><code>aria-labelledby</code>:</strong> Associa um elemento a outro que o descreve.</li>
+</ul>
+<p>```html
+<br />
+<div id="descricao">Descrição do botão</div></p>
+<p><button aria-labelledby="descricao">Botão</button>
+  ```</p>
+<ul>
+<li><strong><code>aria-hidden</code>:</strong> Oculta elementos que não devem ser lidos por leitores de tela.</li>
+</ul>
+<p><code>html
+  &lt;span aria-hidden="true"&gt;⭐&lt;/span&gt;</code></p>
+<h2 id="3-contraste-de-cores">3. Contraste de Cores<a class="headerlink" href="#3-contraste-de-cores" title="Permanent link">&para;</a></h2>
+<p>Garanta que o contraste entre o texto e o fundo seja suficiente para que usuários com deficiência visual possam ler o conteúdo. O padrão WCAG recomenda uma relação de contraste de pelo menos 4.5:1 para texto normal e 3:1 para texto grande.</p>
+<h3 id="ferramentas-de-verificacao-de-contraste">Ferramentas de Verificação de Contraste<a class="headerlink" href="#ferramentas-de-verificacao-de-contraste" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>WebAIM Contrast Checker:</strong> <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
+<li><strong>Color Contrast Analyzer:</strong> Disponível como extensão para navegadores.</li>
+</ul>
+<h2 id="4-imagens-e-multimidia">4. Imagens e Multimídia<a class="headerlink" href="#4-imagens-e-multimidia" title="Permanent link">&para;</a></h2>
+<p>Forneça alternativas textuais para imagens e conteúdo multimídia.</p>
+<h3 id="exemplos">Exemplos<a class="headerlink" href="#exemplos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Imagens (<code>&lt;img&gt;</code>):</strong> Use o atributo <code>alt</code> para descrever a imagem.</li>
+</ul>
+<p><code>html
+  &lt;img src="logo.png" alt="Logo da Empresa"&gt;</code></p>
+<ul>
+<li><strong>Vídeos e Áudios:</strong> Forneça legendas, transcrições e descrições de áudio.</li>
+</ul>
+<p>```html
+<br />
+<video controls>
+    <source src="video.mp4" type="video/mp4">
+    <track src="legendas.vtt" kind="captions" label="Português" srclang="pt" default>
+  </video></p>
+<p>```</p>
+<h2 id="5-boas-praticas-gerais">5. Boas Práticas Gerais<a class="headerlink" href="#5-boas-praticas-gerais" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Evite Autoplay:</strong> Não reproduza áudio ou vídeo automaticamente, pois pode ser perturbador para usuários com deficiência cognitiva.</li>
+<li><strong>Design Responsivo:</strong> Garanta que o site seja acessível em diferentes dispositivos e tamanhos de tela.</li>
+<li><strong>Feedback de Erros:</strong> Forneça mensagens de erro claras e sugestões para correção em formulários.</li>
+</ul>
+<p>```html
+  <input type="email" required aria-describedby="email-erro">
+<br />
+<div id="email-erro" role="alert">Por favor, insira um endereço de email válido.</div></p>
+<p>```</p>
+<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
+<p>Implementar acessibilidade ao codar um site não só beneficia usuários com deficiências, mas também melhora a experiência geral para todos. Ao seguir as práticas recomendadas e utilizar ferramentas de teste, você pode garantir que seu site seja inclusivo e acessível a todos os usuários. A acessibilidade é um compromisso contínuo, e revisões regulares são essenciais para manter um site verdadeiramente acessível.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

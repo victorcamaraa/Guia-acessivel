@@ -1,0 +1,852 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../wcag/">
+      
+      
+        <link rel="next" href="../Testes/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Ferramentas - Guia Acessível</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../styles/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ferramentas-para-desenvolvedores-web-de-acessibilidade" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Guia Acessível" class="md-header__button md-logo" aria-label="Guia Acessível" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guia Acessível
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ferramentas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../analise/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Analise
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Cidadania-web/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cidadania Web
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../wcag/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  WCAG e Nielsen
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Ferramentas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Testes/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  testes das ferramentas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../leitoresdetela/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Leitores de tela
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../teclado/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Teclado
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../codigo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Codigo
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Guia Acessível" class="md-nav__button md-logo" aria-label="Guia Acessível" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guia Acessível
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cidadania-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cidadania Web
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wcag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WCAG e Nielsen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-de-auditoria-automatica-para-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de Auditoria Automática para Acessibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-de-verificacao-de-conformidade-de-imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de Verificação de Conformidade de Imagens
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-de-teste-de-leitores-de-tela" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de Teste de Leitores de Tela
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-ia-em-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso de IA em Acessibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificacao-de-contraste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificação de Contraste
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-de-desenvolvedor-devtools-para-testes-de-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de Desenvolvedor (DevTools) para Testes de Acessibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-manuais-de-acessibilidade-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes Manuais de Acessibilidade Web
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    testes das ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leitoresdetela/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Leitores de tela
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teclado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teclado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codigo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Codigo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ferramentas-para-desenvolvedores-web-de-acessibilidade">Ferramentas para Desenvolvedores Web de Acessibilidade<a class="headerlink" href="#ferramentas-para-desenvolvedores-web-de-acessibilidade" title="Permanent link">&para;</a></h1>
+<p>Principais ferramentas para testar e melhorar a acessibilidade em aplicações web.</p>
+<h2 id="ferramentas-de-auditoria-automatica-para-acessibilidade">Ferramentas de Auditoria Automática para Acessibilidade<a class="headerlink" href="#ferramentas-de-auditoria-automatica-para-acessibilidade" title="Permanent link">&para;</a></h2>
+<p>Ferramentas de auditoria automática são essenciais para desenvolvedores web que desejam garantir a acessibilidade de seus sites e aplicações. Elas ajudam a identificar problemas de conformidade com as diretrizes da <strong>WCAG (Web Content Accessibility Guidelines)</strong>, sugerindo melhorias para tornar os conteúdos mais acessíveis a todos os usuários, incluindo aqueles com deficiência.</p>
+<h3 id="principais-ferramentas-de-auditoria-automatica-e-seus-usos">Principais Ferramentas de Auditoria Automática e Seus Usos<a class="headerlink" href="#principais-ferramentas-de-auditoria-automatica-e-seus-usos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://developer.chrome.com/docs/lighthouse/overview?hl=pt-br"><strong>Lighthouse (Google Chrome DevTools):</strong></a> Integrado ao Chrome DevTools, avalia acessibilidade, desempenho e SEO. Exemplo: Um desenvolvedor pode rodar o Lighthouse para testar a acessibilidade de um site e descobrir que a relação de contraste entre texto e fundo está inadequada, sugerindo um ajuste na paleta de cores.</li>
+<li><a href="https://www.deque.com/axe/devtools/"><strong>axe DevTools (Deque Systems):</strong></a> Extensão para Chrome e Firefox que identifica problemas de acessibilidade e sugere soluções. Exemplo: Um site de e-commerce pode usar o axe DevTools para encontrar botões sem rótulos adequados para leitores de tela e corrigi-los.</li>
+<li><a href="https://wave.webaim.org/"><strong>WAVE (Web Accessibility Evaluation Tool):</strong></a> Ferramenta online que analisa contrastes, estrutura de cabeçalhos e elementos ARIA. Exemplo: Um desenvolvedor pode usar o WAVE para revisar a hierarquia de títulos de uma página, garantindo que usuários com deficiência visual possam navegar facilmente pelo conteúdo.</li>
+<li><a href="https://pa11y.org/"><strong>Pa11y:</strong></a> Ferramenta de linha de comando para auditoria automática, ideal para integração em pipelines de CI/CD. Exemplo: Uma equipe de desenvolvimento pode configurar o Pa11y para rodar verificações automáticas em cada novo deploy e garantir que nenhuma atualização quebre padrões de acessibilidade.</li>
+<li><a href="https://www.siteimprove.com/toolkit/accessibility-checker/"><strong>Siteimprove Accessibility Checker:</strong></a> Extensão para navegador que oferece análise detalhada focada na WCAG. Exemplo: Um editor de blog pode usar o Siteimprove para validar acessibilidade antes de publicar um novo artigo, evitando links mal descritos ou imagens sem texto alternativo.</li>
+<li><a href="https://www.powermapper.com/"><strong>Powemapper:</strong></a> Ferramenta que ajuda a analisar e melhorar a acessibilidade e usabilidade de sites, criando mapas visuais, identificando problemas e garantindo conformidade com padrões como WCAG. É útil para otimizar a experiência do usuário e tornar sites mais acessíveis.</li>
+</ul>
+<h3 id="beneficios-da-auditoria-automatica-na-pratica">Benefícios da Auditoria Automática na Prática<a class="headerlink" href="#beneficios-da-auditoria-automatica-na-pratica" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Identificação rápida de erros comuns:</strong> Um site governamental pode usar essas ferramentas para encontrar rapidamente problemas como falta de legendas em vídeos.</li>
+<li><strong>Sugestões diretas para correção:</strong> Um portal de serviços pode receber sugestões automáticas para corrigir botões invisíveis para leitores de tela.</li>
+<li><strong>Facilidade de integração com fluxos de desenvolvimento:</strong> Empresas de tecnologia podem automatizar testes de acessibilidade como parte de seus processos de CI/CD.</li>
+<li><strong>Conformidade com padrões da WCAG 2.1 e futuras versões:</strong> Sites que seguem essas diretrizes evitam problemas legais e garantem inclusão digital.</li>
+</ul>
+<p>Apesar dessas ferramentas serem poderosas, elas <strong>não substituem testes manuais e com usuários reais</strong>. Para um site verdadeiramente acessível, combine auditorias automáticas com testes de usabilidade envolvendo pessoas com deficiência. Exemplo: Após usar uma ferramenta de auditoria, uma empresa pode convidar usuários com deficiência para testar o site e relatar dificuldades que ferramentas automáticas podem não detectar.</p>
+<h2 id="ferramentas-de-verificacao-de-conformidade-de-imagens">Ferramentas de Verificação de Conformidade de Imagens<a class="headerlink" href="#ferramentas-de-verificacao-de-conformidade-de-imagens" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>SEOptimer Image Alt Tag Checker</strong>: Varre páginas para garantir que todas as imagens possuam atributos <code>alt</code> definidos corretamente (<a href="https://www.seoptimer.com/alt-tag-checker/?utm_source=chatgpt.com" title="Image Alt Tag Checker - SEOptimer">SEOptimer</a>).</li>
+<li><strong>TinyIMG Alt Text Checker</strong>: Além de checar <code>alt</code>, oferece orientações de SEO e boas práticas de descrição de imagens (<a href="https://tiny-img.com/tools/alt-checker/?utm_source=chatgpt.com" title="Free Image Alt Text Checker | TinyIMG">TinyIMG</a>).</li>
+<li><strong>Geradores de descrição por IA (e.g. Midjourney Image‑to‑Text)</strong>: Usam modelos de visão computacional para criar descrições detalhadas de imagens, ampliando a acessibilidade de conteúdos visuais (<a href="https://www.lifewire.com/why-midjourneys-new-image-to-text-generator-is-an-accessibility-home-run-7377344?utm_source=chatgpt.com" title="Why Midjourney's New Image-to-Text Generator Is an Accessibility Home Run">Lifewire</a>).</li>
+</ul>
+<h2 id="ferramentas-de-teste-de-leitores-de-tela">Ferramentas de Teste de Leitores de Tela<a class="headerlink" href="#ferramentas-de-teste-de-leitores-de-tela" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>JAWS (Job Access With Speech)</strong>: O leitor de tela mais utilizado no Windows, com comandos dedicados de navegação e suporte empresarial (<a href="https://css-tricks.com/comparing-jaws-nvda-and-voiceover/?utm_source=chatgpt.com" title="A Brief Introduction to JAWS, NVDA, and VoiceOver - CSS-Tricks">CSS-Tricks</a>).</li>
+<li><strong>NVDA (NonVisual Desktop Access)</strong>: Leitor de código‑fonte aberto, gratuito, com funcionalidades similares ao JAWS (<a href="https://www.audioeye.com/post/nvda-screen-reader-web-accessibility/?utm_source=chatgpt.com" title="Using the NVDA Screen Reader to Test Web Accessibility - AudioEye">AudioEye</a>).</li>
+<li><strong>VoiceOver (Apple)</strong>: Integrado ao macOS e iOS, permite testar navegabilidade por voz e gestos, garantindo cobertura em plataformas Apple (<a href="https://css-tricks.com/comparing-jaws-nvda-and-voiceover/?utm_source=chatgpt.com" title="A Brief Introduction to JAWS, NVDA, and VoiceOver - CSS-Tricks">CSS-Tricks</a>).</li>
+</ul>
+<h2 id="uso-de-ia-em-acessibilidade">Uso de IA em Acessibilidade<a class="headerlink" href="#uso-de-ia-em-acessibilidade" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>accessiBe</strong>: Widget que aplica ajustes automatizados de screen reader e navegação por teclado, prometendo conformidade rápida, mas sujeito a falhas que podem degradar a experiência (<a href="https://accessibe.com/accesswidget/artificial-intelligence?utm_source=chatgpt.com" title="AI-Powered Accessibility - accessiBe">accessiBe</a>).</li>
+<li><strong>Limitações e Riscos</strong>: Estudos mostram que soluções de IA para acessibilidade ainda geram erros significativos — desde descrições imprecisas até interpretações incorretas de elementos — e já motivaram processos judiciais (<a href="https://www.ft.com/content/3c877c55-b698-43da-a222-8ae183f53078?utm_source=chatgpt.com" title="Blind internet users struggle with error-prone AI aids">Financial Times</a>, <a href="https://www.wired.com/story/company-tapped-ai-website-landed-court?utm_source=chatgpt.com" title="This Company Tapped AI for Its Website-and Landed in Court">WIRED</a>).</li>
+</ul>
+<h2 id="verificacao-de-contraste">Verificação de Contraste<a class="headerlink" href="#verificacao-de-contraste" title="Permanent link">&para;</a></h2>
+<p>Ferramentas como o WebAIM Contrast Checker e o plugin WCAG Color Contrast Analyzer ajudam a garantir que o contraste entre o texto e o fundo esteja em conformidade com os padrões WCAG.</p>
+<h2 id="ferramentas-de-desenvolvedor-devtools-para-testes-de-acessibilidade">Ferramentas de Desenvolvedor (DevTools) para Testes de Acessibilidade<a class="headerlink" href="#ferramentas-de-desenvolvedor-devtools-para-testes-de-acessibilidade" title="Permanent link">&para;</a></h2>
+<p>As Ferramentas de Desenvolvedor (DevTools) do Chrome e Firefox são fundamentais para testar e otimizar a acessibilidade em sites. Ambos os navegadores oferecem diversas ferramentas que ajudam a identificar problemas de acessibilidade, testar como diferentes usuários percebem um site e garantir que ele atenda aos critérios de acessibilidade estabelecidos pelas WCAG 2.0. A seguir, destacamos alguns dos recursos mais relevantes:</p>
+<h3 id="1-arvore-de-acessibilidade">1. Árvore de Acessibilidade<a class="headerlink" href="#1-arvore-de-acessibilidade" title="Permanent link">&para;</a></h3>
+<p>A Árvore de Acessibilidade exibe a estrutura de um site da maneira como os leitores de tela a percebem. Ela mostra os elementos de uma página web de forma hierárquica, facilitando a verificação de como os elementos são organizados para usuários com deficiência visual. Com a Árvore de Acessibilidade, é possível inspecionar:</p>
+<ul>
+<li>A ordem de leitura dos elementos.</li>
+<li>Se os elementos possuem rótulos acessíveis, como <code>aria-label</code> ou texto alternativo.</li>
+<li>Se os controles interativos estão bem estruturados para navegação por teclado.</li>
+</ul>
+<p>No <strong>Chrome DevTools</strong>, você pode acessar a Árvore de Acessibilidade através da aba "Elements", clicando com o botão direito do mouse em um elemento e selecionando "Inspect Accessibility Properties". No <strong>Firefox</strong>, a ferramenta "Accessibility Inspector" oferece uma visão semelhante.</p>
+<h3 id="2-simulacao-de-daltonismo">2. Simulação de Daltonismo<a class="headerlink" href="#2-simulacao-de-daltonismo" title="Permanent link">&para;</a></h3>
+<p>A simulação de daltonismo permite verificar como um site será visualizado por pessoas com diferentes tipos de deficiência de cores, como:</p>
+<ul>
+<li><strong>Protanopia</strong> (cegueira para o vermelho).</li>
+<li><strong>Deuteranopia</strong> (cegueira para o verde).</li>
+<li><strong>Tritanopia</strong> (cegueira para o azul).</li>
+</ul>
+<p>Essas simulações ajudam a testar o contraste de cores e garantir que as informações não dependam apenas de cores para serem compreendidas. No <strong>Chrome DevTools</strong>, a simulação de daltonismo pode ser ativada na aba "Rendering" (Renderização). No <strong>Firefox</strong>, existe uma funcionalidade similar na aba "Accessibility".</p>
+<h3 id="3-verificacao-de-atributos-aria">3. Verificação de Atributos ARIA<a class="headerlink" href="#3-verificacao-de-atributos-aria" title="Permanent link">&para;</a></h3>
+<p>Os atributos <strong>ARIA</strong> (Accessible Rich Internet Applications) são usados para melhorar a acessibilidade de elementos dinâmicos ou complexos, como menus suspensos, carrosséis e formulários interativos. Tanto o <strong>Chrome DevTools</strong> quanto o <strong>Firefox</strong> permitem inspecionar se esses atributos estão sendo usados corretamente, como:</p>
+<ul>
+<li><code>aria-live</code> para atualizações dinâmicas.</li>
+<li><code>aria-labelledby</code> e <code>aria-describedby</code> para associar rótulos e descrições.</li>
+<li><code>role</code> para indicar o propósito de um elemento (ex.: <code>role="button"</code>).</li>
+</ul>
+<p>Ambos os navegadores alertam sobre problemas relacionados ao uso incorreto ou ausência desses atributos, ajudando a garantir que elementos interativos sejam acessíveis para usuários de leitores de tela.</p>
+<p>Essas ferramentas são extremamente úteis para desenvolvedores e designers que buscam melhorar a acessibilidade de seus sites. Elas permitem testar e corrigir facilmente problemas sem a necessidade de dispositivos assistivos adicionais, tornando o processo mais ágil e eficaz.</p>
+<h2 id="testes-manuais-de-acessibilidade-web">Testes Manuais de Acessibilidade Web<a class="headerlink" href="#testes-manuais-de-acessibilidade-web" title="Permanent link">&para;</a></h2>
+<p>No contexto de acessibilidade web, os testes manuais desempenham um papel fundamental, especialmente quando combinados com auditorias automáticas. A ideia é identificar questões que as ferramentas automáticas podem não detectar, garantindo que a experiência do usuário seja otimizada para todos, incluindo pessoas com deficiências. Abaixo estão alguns testes manuais essenciais:</p>
+<h3 id="1-navegacao-via-teclado">1. Navegação via Teclado<a class="headerlink" href="#1-navegacao-via-teclado" title="Permanent link">&para;</a></h3>
+<p>A navegação por teclado é uma das formas mais importantes de garantir a acessibilidade. Usuários com deficiência motora ou visual podem depender exclusivamente do teclado para navegar. Testar a navegação via teclado envolve:</p>
+<ul>
+<li>Verificar se todos os elementos interativos (links, botões, formulários, etc.) podem ser acessados e manipulados sem a necessidade de um mouse.</li>
+<li>Verificar a ordem de navegação (tabulação) e se o foco visual está claramente indicado.</li>
+</ul>
+<p>Esse teste assegura que usuários que não podem usar o mouse possam interagir facilmente com o site.</p>
+<h3 id="2-analise-de-codigo-semantico">2. Análise de Código Semântico<a class="headerlink" href="#2-analise-de-codigo-semantico" title="Permanent link">&para;</a></h3>
+<p>O uso de código semântico é crucial para garantir que o conteúdo seja compreendido adequadamente por tecnologias assistivas, como leitores de tela. Durante os testes manuais, o desenvolvedor verifica se o HTML está estruturado corretamente, com a semântica adequada, para garantir que os usuários de leitores de tela possam:</p>
+<ul>
+<li>Navegar de forma clara e eficiente.</li>
+<li>Compreender o conteúdo sem confusão.</li>
+</ul>
+<p>Elementos como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, entre outros, devem ser usados corretamente para garantir uma estrutura lógica e clara do conteúdo.</p>
+<h3 id="3-testes-de-foco">3. Testes de Foco<a class="headerlink" href="#3-testes-de-foco" title="Permanent link">&para;</a></h3>
+<p>Testar o foco é vital para garantir que, ao navegar via teclado, o foco seja mantido de forma lógica e visível em todos os elementos interativos. Durante os testes de foco, o desenvolvedor deve:</p>
+<ul>
+<li>Garantir que o foco esteja visível e mantenha a ordem lógica ao navegar entre os elementos interativos.</li>
+<li>Verificar que, ao abrir ou fechar elementos interativos como modais e menus suspensos, o foco seja transferido corretamente, sem se perder.</li>
+<li>Testar a navegação em páginas dinâmicas, garantindo que o foco não seja perdido ao carregar novos conteúdos.</li>
+</ul>
+<p>Esses testes são especialmente importantes em sites dinâmicos, onde a navegação e a interação podem ser mais complexas, garantindo que o usuário nunca se perca durante a interação.</p>
+<p>Esses testes manuais ajudam a identificar problemas que não seriam capturados apenas com auditorias automáticas, como erros na experiência do usuário que podem afetar a navegação ou a interação em uma página. Quando combinados com ferramentas automáticas de auditoria, esses testes garantem que o site seja realmente acessível para o maior número de pessoas possível.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
